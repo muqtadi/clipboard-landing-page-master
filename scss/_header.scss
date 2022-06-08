@@ -1,0 +1,84 @@
+.header{
+  position: relative;
+
+
+  .container{
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 90px;
+
+    .header__logo{width: 100px; height: 100px; margin-bottom: 50px;}
+    .header__title{color: rgb(75, 86, 92); font-size: 28px; margin-bottom: 20px;}
+    .header__copy{
+      color:rgb(175, 176, 178);
+      margin: 0 auto;
+      padding-bottom: 38px;
+      line-height: 30px;
+      max-width: 630px;
+    }
+    .header__download{
+      display: grid;
+      grid-template-columns: auto;
+      max-width: 400px;
+      margin: 0 auto;
+      grid-row-gap: 16px;
+
+      .btn__down{
+        height: 45px;
+        border-radius: 50px;
+        border: none;
+        color: #fff;
+        font-family: 'Bai Jamjuree';
+        font-weight: 600;
+        font-size: 16px;
+        cursor: pointer;
+        &:hover{opacity: .7;}
+
+      }
+      .btn__for__ios{background-color: rgb(38, 187, 165); box-shadow: 0 3px rgb(27, 160, 141);}
+      .brn__for__mac{background-color: rgb(97, 116, 255); box-shadow: 0 3px rgb(83, 101, 203);}
+    }
+  }
+   .header__bg__img{
+    width: 100%;
+    min-height: 360px;
+    background-image: url('/img/bg-header-mobile.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+
+  }
+}
+
+@media(min-width: 425px){
+  .header{
+    .header__bg__img{
+      width: 100%;
+      min-height: 340px;
+      background-image: url('/img/bg-header-desktop.png');
+      background-position: center;
+    }
+    .container{
+      padding-top: 110px;
+
+      .header__title{font-size: 32px;}
+    }
+  }
+
+}
+
+
+@media(min-width: 1024px){
+  .header{
+    .container{
+      .header__logo{width: 130px; height: 130px; margin-bottom: 70px;}
+      .header__title{font-size: 44px; margin-bottom: 32px;}
+      .header__copy{padding-bottom: 48px;}
+      .header__download{grid-template-columns: auto auto; grid-column-gap: 10px; max-width: 500px;}
+    }
+  }
+}

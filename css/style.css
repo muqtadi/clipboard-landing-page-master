@@ -12,6 +12,122 @@
   font-style: normal;
 }
 
+.header {
+  position: relative;
+}
+
+.header .container {
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 90px;
+}
+
+.header .container .header__logo {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 50px;
+}
+
+.header .container .header__title {
+  color: #4b565c;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.header .container .header__copy {
+  color: #afb0b2;
+  margin: 0 auto;
+  padding-bottom: 38px;
+  line-height: 30px;
+  max-width: 630px;
+}
+
+.header .container .header__download {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  max-width: 400px;
+  margin: 0 auto;
+  grid-row-gap: 16px;
+}
+
+.header .container .header__download .btn__down {
+  height: 45px;
+  border-radius: 50px;
+  border: none;
+  color: #fff;
+  font-family: 'Bai Jamjuree';
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.header .container .header__download .btn__down:hover {
+  opacity: .7;
+}
+
+.header .container .header__download .btn__for__ios {
+  background-color: #26bba5;
+  -webkit-box-shadow: 0 3px #1ba08d;
+          box-shadow: 0 3px #1ba08d;
+}
+
+.header .container .header__download .brn__for__mac {
+  background-color: #6174ff;
+  -webkit-box-shadow: 0 3px #5365cb;
+          box-shadow: 0 3px #5365cb;
+}
+
+.header .header__bg__img {
+  width: 100%;
+  min-height: 360px;
+  background-image: url("/img/bg-header-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+@media (min-width: 425px) {
+  .header .header__bg__img {
+    width: 100%;
+    min-height: 340px;
+    background-image: url("/img/bg-header-desktop.png");
+    background-position: center;
+  }
+  .header .container {
+    padding-top: 110px;
+  }
+  .header .container .header__title {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header .container .header__logo {
+    width: 130px;
+    height: 130px;
+    margin-bottom: 70px;
+  }
+  .header .container .header__title {
+    font-size: 44px;
+    margin-bottom: 32px;
+  }
+  .header .container .header__copy {
+    padding-bottom: 48px;
+  }
+  .header .container .header__download {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    grid-column-gap: 10px;
+    max-width: 500px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -28,5 +144,10 @@ body {
   max-width: 1440px;
   min-height: 100vh;
   margin: 0 auto;
+  border: 1px solid orange;
+}
+
+.container {
+  padding: 0 20px;
 }
 /*# sourceMappingURL=style.css.map */
