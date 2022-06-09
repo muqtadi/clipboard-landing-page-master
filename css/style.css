@@ -237,6 +237,48 @@
   }
 }
 
+.benefits {
+  text-align: center;
+  padding-top: 120px;
+}
+
+.benefits .container {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+
+.benefits .container .benefits__title {
+  font-size: 28px;
+  color: #4b565c;
+  margin-bottom: 18px;
+}
+
+.benefits .container .benefits__copy {
+  max-width: 730px;
+  color: #afb0b2;
+  margin-bottom: 50px;
+}
+
+.benefits .container .benefits__img {
+  max-width: 815px;
+  width: 100%;
+  min-height: 140px;
+}
+
+@media (min-width: 1024px) {
+  .benefits {
+    padding-top: 160px;
+  }
+  .benefits .container .benefits__title {
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+  .benefits .container .benefits__copy {
+    margin-bottom: 110px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;

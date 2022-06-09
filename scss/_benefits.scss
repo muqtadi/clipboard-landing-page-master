@@ -1,0 +1,21 @@
+.benefits{
+  text-align: center;
+  padding-top: 120px;
+  .container{
+    display: grid;
+    justify-items: center;
+    .benefits__title{font-size: 28px; color: #4b565c; margin-bottom: 18px;}
+    .benefits__copy{max-width: 730px; color: rgb(175, 176, 178); margin-bottom: 50px;}
+    .benefits__img{max-width: 815px; width: 100%; min-height: 140px;}
+  }
+}
+
+@media(min-width: 1024px){
+  .benefits{
+    padding-top: 160px;
+    .container{
+      .benefits__title{font-size: 34px; margin-bottom: 30px;}
+      .benefits__copy{margin-bottom: 110px;}
+    }
+  }
+}
