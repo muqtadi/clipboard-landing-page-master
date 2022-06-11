@@ -18,6 +18,7 @@
 @import './header';
 @import './main__feature';
 @import './benefits';
+@import './productivity';
 
 *{
   margin: 0;
@@ -26,8 +27,9 @@
 }
 body{
   font-family: 'Bai Jamjuree', sans-serif;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 26px;
+  color: rgb(175, 176, 178);
 }
 .wrapper{
   max-width: 1440px;
@@ -39,3 +41,4 @@ body{
 .container{
   padding: 0 20px;
 }
+h1{color: #4b565c;}
