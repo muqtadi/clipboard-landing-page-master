@@ -3,7 +3,7 @@
   .container{
     display: grid;
     grid-template-columns: auto;
-    justify-content: center;
+    justify-items: center;
     text-align: center;
     grid-row-gap: 45px;
     max-width: 1200px;
@@ -30,7 +30,6 @@
         font-size: 26px;
         margin-bottom: 15px;
       }
-      .productive__copy{}
     }
   }
 }
