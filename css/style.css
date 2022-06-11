@@ -392,6 +392,82 @@
   }
 }
 
+.appStore {
+  padding: 135px 0;
+}
+
+.appStore .container .appStore__content {
+  max-width: 680px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.appStore .container .appStore__content .appStore__title {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.appStore .container .appStore__content .appStore__copy {
+  margin-bottom: 30px;
+}
+
+.appStore .container .appStore__content .appStore__btns .appStore__btns__link {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 400px;
+  height: 40px;
+  margin: 0 auto;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 50px;
+}
+
+.appStore .container .appStore__content .appStore__btns .appStore__btns__link:hover {
+  opacity: 0.8;
+}
+
+.appStore .container .appStore__content .appStore__btns .appStore__ios {
+  background-color: #26bba5;
+  -webkit-box-shadow: 0 3px #259a87, 0 10px 20px rgba(127, 226, 211, 0.562);
+          box-shadow: 0 3px #259a87, 0 10px 20px rgba(127, 226, 211, 0.562);
+  margin-bottom: 16px;
+}
+
+.appStore .container .appStore__content .appStore__btns .appStore__mac {
+  background-color: #6174ff;
+  -webkit-box-shadow: 0 3px #5763d1, 0 10px 20px rgba(126, 137, 226, 0.562);
+          box-shadow: 0 3px #5763d1, 0 10px 20px rgba(126, 137, 226, 0.562);
+}
+
+@media (min-width: 1024px) {
+  .appStore .container .appStore__content .appStore__title {
+    margin-bottom: 30px;
+    font-size: 34px;
+  }
+  .appStore .container .appStore__content .appStore__copy {
+    margin-bottom: 50px;
+  }
+  .appStore .container .appStore__content .appStore__btns {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+    grid-column-gap: 15px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 473px;
+    margin: 0 auto;
+  }
+  .appStore .container .appStore__content .appStore__btns .appStore__btns__link {
+    margin: 0;
+    height: 48px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
